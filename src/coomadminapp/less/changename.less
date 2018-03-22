@@ -1,0 +1,96 @@
+@backColor: #009688;
+@iconColor: #ff3f80;
+
+body{
+	background: #eee;
+}
+
+/*----------------------------compo-------------------------------*/
+.compo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #eee;
+}
+
+/*----------------------------inputbox-------------------------------*/
+.inputbox{
+	position: relative;
+	background: #fff;
+
+	>textarea{
+		position: relative;
+		width: 100%;
+		height: 330px;
+		font-size: 28px;
+		padding: 0 30px;
+		border-top: 30px solid #fff;
+	}
+
+	>p{
+		position: relative;
+		float: right;
+		font-size: 28px;
+		color: #d2d2d2;
+		line-height: 60px;
+		padding: 0 30px;
+
+		>b{
+			font-size: 28px;
+			font-weight: 500;
+		}
+	}
+}
+
+.footer_btn{
+	position: relative;
+	width: 100%;
+	padding: 20px 30px 0 30px;
+
+	>input{
+		position: relative;
+		display: block;
+		width: 130px;
+		height: 70px;
+		line-height: 70px;
+		border-radius: 35px 35px;
+		border: 2px solid @backColor;
+		text-align: center;
+		font-size: 26px;
+		float: right;
+		margin-left: 30px;
+	}
+	>input:last-child {
+		background: none;
+		color: @backColor;
+	}
+	>input:first-child {
+		background: @backColor;
+		color: #fff;
+	}
+}
+
+.tips{
+	position: relative;
+	padding: 20px 30px 0 30px;
+
+	>p{
+		position: relative;
+		float: left;
+		font-size: 28px;
+		line-height: 28px;
+		padding: 20px 20px;
+		border-radius: 5px 5px;
+		color: #fff;
+		background: #474747;
+		text-align: center;
+		left: 50%;
+		transform: translateX(-50%);
+		-ms-transform: translateX(-50%); 	/* IE 9 */
+		-moz-transform: translateX(-50%); 	/* Firefox */
+		-webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+		-o-transform: translateX(-50%); 	/* Opera */
+	}
+}

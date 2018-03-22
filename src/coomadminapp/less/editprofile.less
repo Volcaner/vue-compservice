@@ -1,0 +1,321 @@
+@backColor: #009688;
+@iconColor: #ff3f80;
+
+/**************************profile**************************/
+.profile{
+	position: fixed;
+	top: 0;
+	width: 750px;
+	height: 100%;
+	background: #eee;
+	left: 50%;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%); 	/* IE 9 */
+	-moz-transform: translateX(-50%); 	/* Firefox */
+	-webkit-transform: translateX(-50%); /* Safari 和 Chrome */
+	-o-transform: translateX(-50%); 	/* Opera */
+
+	>.proReturn{
+		position: relative;
+		background: #fff;
+	}
+
+	>.fileChange{
+		position: relative;
+		background: #fff;
+	}
+
+	>.fileHandle{
+		position: relative;
+		background: #fff;
+	}
+}
+
+.return2Me{
+	position: relative;
+	height: 130px;
+	padding: 0 30px;
+	border-bottom: 20px solid #eee;
+
+	>span{
+		position: relative;
+		float: left;
+		font-size: 30px;
+		color: #757575;
+		top: 50%;
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%); 	/* IE 9 */
+		-moz-transform: translateY(-50%); 	/* Firefox */
+		-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+		-o-transform: translateY(-50%); 	/* Opera */
+	}
+
+	>p{
+		position: relative;
+		float: left;
+		font-size: 28px;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%); 	/* IE 9 */
+		-moz-transform: translate(-50%, -50%); 	/* Firefox */
+		-webkit-transform: translate(-50%, -50%); /* Safari 和 Chrome */
+		-o-transform: translate(-50%, -50%); 	/* Opera */
+	}
+}
+
+.proPic, .proName, .proAlias, .proTel{
+	position: relative;
+	height: 110px;
+	margin: 0 30px;
+	border-bottom: 1px solid #eee;
+
+	>div{
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%); 	/* IE 9 */
+		-moz-transform: translateY(-50%); 	/* Firefox */
+		-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+		-o-transform: translateY(-50%); 	/* Opera */
+	}
+
+	>.proTitle{
+		position: relative;
+		float: left;
+
+		>p{
+			font-size: 28px;
+		}
+	}
+
+	>.proValue{
+		position: relative;
+		float: right;
+		height: 70px;
+
+		>img{
+			float: left;
+			width: 70px;
+			height: 70px;
+			border-radius: 50% 50%;
+		}
+
+		>span{
+			position: relative;
+			float: right;
+			font-size: 30px;
+			margin-left: 32px;
+			color: #757575;
+			top: 50%;
+			transform: translateY(-50%);
+			-ms-transform: translateY(-50%); 	/* IE 9 */
+			-moz-transform: translateY(-50%); 	/* Firefox */
+			-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+			-o-transform: translateY(-50%); 	/* Opera */
+		}
+
+		>p{
+			position: relative;
+			float: right;
+			font-size: 28px;
+			color: #757575;
+			top: 50%;
+			transform: translateY(-50%);
+			-ms-transform: translateY(-50%); 	/* IE 9 */
+			-moz-transform: translateY(-50%); 	/* Firefox */
+			-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+			-o-transform: translateY(-50%); 	/* Opera */
+		}
+
+		>b{
+			position: relative;
+			float: left;
+			font-size: 28px;
+			font-weight: normal;
+			color: #757575;
+			top: 50%;
+			transform: translateY(-50%);
+			-ms-transform: translateY(-50%); 	/* IE 9 */
+			-moz-transform: translateY(-50%); 	/* Firefox */
+			-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+			-o-transform: translateY(-50%); 	/* Opera */
+		}
+	}
+}
+
+.proName{
+	border-bottom: none;
+}
+
+.proTel{
+	height: 130px;
+	border-top: 20px solid #eee; 
+	border-bottom: none;
+	margin: 0 0;
+	padding: 0 30px;
+}
+
+/*----------------------------dialog_layout-------------------------------*/
+.dialog_layout{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+
+	.dialog{
+		position: relative;
+		width: 560px;
+		display: block;
+		margin: 0 auto;
+		background: #fff;
+		padding: 30px 0 55px 0;
+		border-radius: 10px 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		-ms-transform: translateY(-50%); 	/* IE 9 */
+		-moz-transform: translateY(-50%); 	/* Firefox */
+		-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+		-o-transform: translateY(-50%); 	/* Opera */
+
+		>.title{
+			position: relative;
+			display: block;
+			margin: 0 auto;
+
+			>p{
+				position: relative;
+				font-size: 32px;
+				font-weight: 900;
+				text-align: center;
+				padding-bottom: 30px;
+				border-bottom: 2px solid #eee;
+			}
+
+			>span{
+				position: absolute;
+				font-size: 32px;
+				color: #d2d2d2;
+				top: 0;
+				right: 30px;
+			}
+		}
+
+		>.password{
+			position: relative;
+			width: 500px;
+			display: block;
+			margin: 0 auto;
+
+			>input{
+				font-size: 28px;
+				width: 500px;
+				height: 80px;
+				line-height: 80px;
+				background: #fff;
+				border: 2px solid #eee;
+				margin-top: 45px;
+			}
+		}
+
+		.validate{
+			position: relative;
+			margin: 0 30px;
+			overflow: hidden;
+
+			>.tel{
+				position: relative;
+				padding: 15px 0;
+				border-bottom: 1px solid #cbcbcb;
+				width: 100%;
+				>label{
+					>span{
+						font-size: 30px;
+						line-height: 1;
+						color: #d2d2d2;
+					}
+
+					>input{
+						font-size: 28px;
+						margin-left: 22px;
+						height: 62px;
+						line-height: 62px;
+						vertical-align: middle;
+					}
+				}
+				>span{
+					display: block;
+					height: 62px;
+					font-size: 28px;
+					color: #fff;
+					padding: 0 25px;
+					margin-top: -1px;
+					float: right;
+					border-radius: 45px;
+					line-height: 62px;
+				}
+				>span.getidcode{
+					background: #21a497;
+				}
+				>span.countdown{
+					background: #adadad;
+				}
+				>p{
+					// position: absolute;
+					color: #ff0000;
+					font-size: 22px;
+					// bottom: -41px;
+				}
+			}
+
+			>.idcode{
+				position: relative;
+				padding: 15px 0;
+				border-bottom: 1px solid #cbcbcb;
+				width: 100%;
+				>label{
+					>span{
+						font-size: 30px;
+						line-height: 1;
+						color: #d2d2d2;
+					}
+
+					>input{
+						font-size: 28px;
+						margin-left: 22px;
+						height: 62px;
+						line-height: 62px;
+						vertical-align: middle;
+					}
+				}
+				>p{
+					// position: absolute;
+					color: #ff0000;
+					font-size: 22px;
+					// bottom: -41px;
+				}
+			}
+		}
+
+		>.comfirm{
+			position: relative;
+			width: 500px;
+			display: block;
+			margin: 0 auto;
+
+			>input{
+				font-size: 28px;
+				width: 500px;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+				color: #fff;
+				background: @backColor;
+				margin-top: 45px;
+				border-radius: 40px 40px;
+			}
+		}
+	}
+}

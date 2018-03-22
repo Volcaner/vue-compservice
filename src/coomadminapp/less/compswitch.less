@@ -1,0 +1,240 @@
+@backColor: #009688;
+@iconColor: #ff3f80;
+
+body{
+	background: #fff;
+}
+
+/*----------------------------compswitch-------------------------------*/
+.compswitch{
+	position: relative;
+	width: 100%;
+	background: #fff;
+
+	>.header{
+		position: relative;
+		height: 170px;
+		padding: 25px 30px;
+		background: @backColor;
+
+		>.meIcon{
+			position: relative;
+			float: left;
+			width: 120px;
+			height: 120px;
+			top: 50%;
+			transform: translateY(-50%);
+			-ms-transform: translateY(-50%); 	/* IE 9 */
+			-moz-transform: translateY(-50%); 	/* Firefox */
+			-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+			-o-transform: translateY(-50%); 	/* Opera */
+
+			>img{
+				width: 120px;
+				height: 120px;
+				float: left;
+				border-radius: 50% 50%;
+			}
+		}
+
+		>.meInfo{
+			position: relative;
+			height: 120px;
+			top: 50%;
+			transform: translateY(-50%);
+			-ms-transform: translateY(-50%); 	/* IE 9 */
+			-moz-transform: translateY(-50%); 	/* Firefox */
+			-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+			-o-transform: translateY(-50%); 	/* Opera */
+			margin-left: 150px;
+
+			>div.meName{
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+				-ms-transform: translateY(-50%); 	/* IE 9 */
+				-moz-transform: translateY(-50%); 	/* Firefox */
+				-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+				-o-transform: translateY(-50%); 	/* Opera */
+
+				>p{
+					position: relative;
+					color: #fff;
+					float: left;
+					top: 50%;
+					transform: translateY(-50%);
+					-ms-transform: translateY(-50%); 	/* IE 9 */
+					-moz-transform: translateY(-50%); 	/* Firefox */
+					-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+					-o-transform: translateY(-50%); 	/* Opera */
+				}
+
+				>p:first-child{
+					font-size: 30px;
+				}
+
+				>p:nth-child(2){
+					font-size: 24px;
+
+					>b{
+						font-weight: 500;
+						font-size: 24px;
+					}
+				}
+
+				>span{
+					position: relative;
+					float: right;
+					font-size: 28px;
+					line-height: 28px;
+					color: #fff;
+					width: 5%;
+					text-align: right;
+					margin-left: 2%;
+					top: 50%;
+					transform: translateY(-50%);
+					-ms-transform: translateY(-50%); 	/* IE 9 */
+					-moz-transform: translateY(-50%); 	/* Firefox */
+					-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+					-o-transform: translateY(-50%); 	/* Opera */
+				}
+			}
+		}
+	}
+
+	>.compCre, .compMg, .compJoin {
+		position: relative;
+
+		>p{
+			position: relative;
+			height: 70px;
+			line-height: 70px;
+			background: #eee;
+			font-size: 24px;
+			color: #757575;
+			padding-left: 30px;
+		}
+
+		>ul{
+			>li{
+				list-style: none;
+				height: 110px;
+				margin: 0 30px;
+				border-bottom: 2px solid #eee;
+
+				>.comppic{
+					position: relative;
+					float: left;
+					width: 68px;
+					height: 68px;
+					top: 50%;
+					transform: translateY(-50%);
+					-ms-transform: translateY(-50%); 	/* IE 9 */
+					-moz-transform: translateY(-50%); 	/* Firefox */
+					-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+					-o-transform: translateY(-50%); 	/* Opera */
+
+					>img{
+						width: 68px;
+						height: 68px;
+						float: left;
+						border-radius: 5px 5px;
+					}
+				}
+
+				>.operate{
+					position: relative;
+					top: 50%;
+					height: 28px;
+					transform: translateY(-50%);
+					-ms-transform: translateY(-50%); 	/* IE 9 */
+					-moz-transform: translateY(-50%); 	/* Firefox */
+					-webkit-transform: translateY(-50%); /* Safari 和 Chrome */
+					-o-transform: translateY(-50%); 	/* Opera */
+					margin-left: 88px;
+
+					>p{
+						position: relative;
+						float: right;
+						font-size: 28px;
+						line-height: 28px;
+						color: #212121;
+						width: 20%;
+						text-align: left;
+						margin-left: 2%;
+					}
+
+					>.active{
+						color: @backColor;
+					}
+
+					>p:first-child{
+						float: left;
+						width: 55%;
+						text-align: left;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						margin-left: 0;
+					}
+
+					>span {
+						position: relative;
+						float: right;
+						font-size: 28px;
+						line-height: 28px;
+						color: #757575;
+						width: 5%;
+						text-align: right;
+						margin-left: 2%;
+					}
+				}
+			}
+		}
+	}
+
+	>.noComp{
+		padding-top: 135px;
+		text-align: center;
+
+		>span{
+			width: 330px;
+			height: 330px;
+			display: block;
+			position: relative;
+			margin: 0 auto;
+
+			>img{
+				width: 330px;
+				position: absolute;
+				left: 0;
+			}
+		}
+
+		>p{
+			color: #adadad;
+			font-size: 26px;
+			margin-top: 75px;
+		}
+	}
+}
+
+/*----------------------------fade1-------------------------------*/
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+.fade1-enter-active {
+  	transition: all .3s ease;
+}
+// .fade1-leave-active {
+//  	 transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+// }
+.fade1-enter,
+	/* .fade-leave-active-to for below version 2.1.8 */ {
+ 	transform: translateX(100px);
+ 	opacity: 0;
+}
+// .fade1-leave
+// 	 .fade-leave-active-to for below version 2.1.8  {
+//  	transform: translateX(-100px);
+//  	opacity: 0;
+// }
